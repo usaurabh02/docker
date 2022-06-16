@@ -2,12 +2,8 @@ name: Deploy
 
 on:
   push:
-<<<<<<< HEAD:.github/workflows/prod.yml
-    branches: [main, push]
-=======
     branches:
       - stag
->>>>>>> stag:.github/workflows/stag.yml
 
 jobs:
   build:
@@ -17,10 +13,6 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-<<<<<<< HEAD:.github/workflows/prod.yml
-          heroku_app_name: "testing-docker02" #Must be unique in Heroku
-          heroku_email: "saurabhu154@gmail.com"
-=======
+
           heroku_app_name: "docker-staging02" #Must be unique in Heroku
           heroku_email: "saurabhu154@gmail.com"
->>>>>>> stag:.github/workflows/stag.yml
