@@ -2,8 +2,13 @@ name: Deploy
 
 on:
   push:
+<<<<<<< HEAD
     branches: [main, push]
 
+=======
+    branches:
+      - stag
+>>>>>>> stag
 
 jobs:
   build:
@@ -13,6 +18,19 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+<<<<<<< HEAD
           heroku_app_name: "testing-docker02" #Must be unique in Heroku
           heroku_email: "saurabhu154@gmail.com"
 
+=======
+
+          heroku_app_name: "docker-staging02" #Must be unique in Heroku
+          heroku_email: "saurabhu154@gmail.com"
+
+# jobs:
+#   Unit test:
+#     steps:
+#       - name: Running test one
+#         run: 
+#           hello.py
+>>>>>>> stag
