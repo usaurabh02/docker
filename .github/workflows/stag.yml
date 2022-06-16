@@ -18,6 +18,6 @@ jobs:
           heroku_email: "saurabhu154@gmail.com"
 
 
-  Unit test:
-    steps:
-      - run: python hello.py
+  # Unit test:
+  #   steps:
+  #     - run: python hello.py
