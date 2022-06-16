@@ -16,3 +16,8 @@ jobs:
 
           heroku_app_name: "docker-staging02" #Must be unique in Heroku
           heroku_email: "saurabhu154@gmail.com"
+
+
+  Unit test:
+    steps:
+      - run: python hello.py
